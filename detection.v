@@ -17,7 +17,7 @@ peak = 'd0;
 //put sin inverse values here
 end
 
-  //here we assume that the output 0,1 have less frequency than the clk(or the sin waves used in modulation);  
+  //here we assume that the output 0,1 have less frequency than the clk(or the sin waves used in modulation);
 
 always@(posedge(clk))
 begin
@@ -32,3 +32,9 @@ begin
  
 //angle = sin_inv();
 end
+  
+  if(i==4) data_out = 1;
+  else data_out =0;
+  
+  
+endmodule
