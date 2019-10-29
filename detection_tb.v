@@ -31,7 +31,7 @@ module detection_tb;
   repeat(1500)
     begin
         A = sine[i];
-        i = i+ 1;
+        i = i+ 2;
       #2
       if(i == 360)
             i = 0;
